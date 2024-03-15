@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamisin Number Swapper</title>
+</head>
+<body>
+<script>
+    var num1 = parseInt(prompt("Enter a first number:"));
+    var num2 = parseInt(prompt("Enter a second number:"));
+
+    document.write("The inputs before swapping: " + num1 + " and " + num2 + "<br>");
+
+    var temporaryVar = num1;
+    num1 = num2;
+    num2 = temporaryVar;
+
+    document.write("After swapping: " + num1 + " and " + num2 + "<br>");
+
+    var sum = num1 + num2;
+
+    document.write("The sum of the two numbers: " + sum);
+</script>
+</body>
+</html>
